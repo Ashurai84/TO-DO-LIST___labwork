@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="gallery-header">
+        <h1>My Gallery</h1>
+        <p>A collection of beautiful images</p>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Gallery Image 1" class="gallery-image">
+            <div class="image-overlay">
+                <div class="overlay-content">
+                    <h3>Image 1</h3>
+                    <p>Click to enlarge</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Gallery Image 2" class="gallery-image">
+            <div class="image-overlay">
+                <div class="overlay-content">
+                    <h3>Image 2</h3>
+                    <p>Click to enlarge</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Gallery Image 3" class="gallery-image">
+            <div class="image-overlay">
+                <div class="overlay-content">
+                    <h3>Image 3</h3>
+                    <p>Click to enlarge</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Gallery Image 4" class="gallery-image">
+            <div class="image-overlay">
+                <div class="overlay-content">
+                    <h3>Image 4</h3>
+                    <p>Click to enlarge</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Gallery Image 5" class="gallery-image">
+            <div class="image-overlay">
+                <div class="overlay-content">
+                    <h3>Image 5</h3>
+                    <p>Click to enlarge</p>
+                </div>
+            </div>
+        </div>
+
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-button">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
