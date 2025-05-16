@@ -1,76 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Gallery</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="gallery-header">
-        <h1>My Gallery</h1>
-        <p>A collection of beautiful images</p>
-    </header>
-
-    <main class="gallery-container">
-        <div class="gallery-item">
-            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Gallery Image 1" class="gallery-image">
-            <div class="image-overlay">
-                <div class="overlay-content">
-                    <h3>Image 1</h3>
-                    <p>Click to enlarge</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Gallery Image 2" class="gallery-image">
-            <div class="image-overlay">
-                <div class="overlay-content">
-                    <h3>Image 2</h3>
-                    <p>Click to enlarge</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Gallery Image 3" class="gallery-image">
-            <div class="image-overlay">
-                <div class="overlay-content">
-                    <h3>Image 3</h3>
-                    <p>Click to enlarge</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Gallery Image 4" class="gallery-image">
-            <div class="image-overlay">
-                <div class="overlay-content">
-                    <h3>Image 4</h3>
-                    <p>Click to enlarge</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Gallery Image 5" class="gallery-image">
-            <div class="image-overlay">
-                <div class="overlay-content">
-                    <h3>Image 5</h3>
-                    <p>Click to enlarge</p>
-                </div>
-            </div>
-        </div>
 
 
-    <div id="lightbox" class="lightbox">
-        <span class="close-button">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div id="lightbox-caption"></div>
+  <header class="site-header">
+    <div class="brand-title">Ashutosh restraunt food </div>
+    <nav class="site-nav">
+      <ul class="site-menu">
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#foodlist">Menu</a></li>
+        <li><a href="#story">About</a></li>
+        <li><a href="#map">Location</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introductory Section -->
+  <section id="intro" class="intro-block">
+    <div class="intro-content">
+      <h2>Welcome to Taste Realm</h2>
+      <p>Where Taste Meets Soul</p>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Food Menu -->
+  <section id="foodlist" class="food-section">
+    <h2 class="headline">Menu Highlights</h2>
+
+    <article class="dish-group">
+      <h3>Appetizers</h3>
+      <div class="dish-grid">
+        <div class="dish-card">
+          <h4>Tomato Delight <span class="tag">Hot Pick</span></h4>
+          <p>Savory tomato mix with crunchy bites.</p>
+          <p class="cost">₹120</p>
+        </div>
+        <div class="dish-card">
+          <h4>Veggie Pockets</h4>
+          <p>Golden rolls packed with greens.</p>
+          <p class="cost">₹150</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish-group">
+      <h3>Main Feast</h3>
+      <div class="dish-grid">
+        <div class="dish-card">
+          <h4>Royal Chicken</h4>
+          <p>Butter-simmered chicken with rice/naan.</p>
+          <p class="cost">₹250</p>
+        </div>
+        <div class="dish-card">
+          <h4>Spicy Paneer <span class="tag">Hot Pick</span></h4>
+          <p>Marinated paneer in masala sauce.</p>
+          <p class="cost">₹230</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish-group">
+      <h3>Sweets & Treats</h3>
+      <div class="dish-grid">
+        <div class="dish-card">
+          <h4>Sugar Pearls</h4>
+          <p>Warm syrup-soaked dumplings.</p>
+          <p class="cost">₹90</p>
+        </div>
+        <div class="dish-card">
+          <h4>Fudge Melt <span class="tag">Hot Pick</span></h4>
+          <p>Brownie served with ice delight.</p>
+          <p class="cost">₹120</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- About Restaurant -->
+  <section id="story" class="about-wrap">
+    <h2 class="headline">Who We Are</h2>
+    <p>Since 2010, Taste Realm has been serving heartfelt dishes with a fusion of classic and modern flavors, crafted with care in every kitchen moment.</p>
+  </section>
+
+  <!-- Location Map -->
+  <section id="map" class="location-wrap">
+    <h2 class="headline">Come Find Us</h2>
+    <p>123 Spice Avenue, Mumbai, India</p>
+    <div class="embed-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609997794!2d72.74109890673658!3d19.08219783932719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63f63f10369%3A0xe5c8822ef63c8d61!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689507229843!5m2!1sen!2sin" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Chat Widget -->
+  <div class="support-chat">
+    <button class="toggle-chat" onclick="switchChat()">💬 Help</button>
+    <div class="chat-box" id="boxChat">
+      <div class="chat-top">
+        <span>Chat Support</span>
+        <button onclick="switchChat()">✖</button>
+      </div>
+      <div class="chat-main" id="mainChat">
+        <div class="chat-message bot-reply">Hi there! Need help? 😊</div>
+      </div>
+      <div class="chat-controls">
+        <input type="text" id="textInput" placeholder="Write something..." onkeydown="checkKey(event)">
+        <button onclick="submitMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchChat() {
+      const chatPanel = document.getElementById('boxChat');
+      chatPanel.style.display = (chatPanel.style.display === 'flex') ? 'none' : 'flex';
+    }
+
+    function submitMessage() {
+      const field = document.getElementById('textInput');
+      const content = field.value.trim();
+      if (!content) return;
+
+      const area = document.getElementById('mainChat');
+
+      const userEntry = document.createElement('div');
+      userEntry.className = 'chat-message user-entry';
+      userEntry.textContent = content;
+      area.appendChild(userEntry);
+      field.value = '';
+      area.scrollTop = area.scrollHeight;
+
+      setTimeout(() => {
+        const autoReply = document.createElement('div');
+        autoReply.className = 'chat-message bot-reply';
+        autoReply.textContent = "Thanks for contacting us! We'll respond shortly.";
+        area.appendChild(autoReply);
+        area.scrollTop = area.scrollHeight;
+      }, 1000);
+    }
+
+    function checkKey(e) {
+      if (e.key === 'Enter') submitMessage();
+    }
+  </script>
+  
 </body>
 </html>
